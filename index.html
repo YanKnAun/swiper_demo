@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Demo</title>
+	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/custom.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="page-title">XXXXXXXXXXXXX</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-item">
+						<img src="http://prts.wiki/images/2/26/%E7%AB%8B%E7%BB%98_%E6%B5%8A%E5%BF%83%E6%96%AF%E5%8D%A1%E8%92%82_1.png">
+						<div class="img-info">1.jpg</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-item">
+						<img src="http://prts.wiki/images/7/72/%E7%AB%8B%E7%BB%98_%E5%87%AF%E5%B0%94%E5%B8%8C_1.png">
+						<div class="img-info">2.jpg</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-item">
+						<img src="http://prts.wiki/images/c/ce/%E7%AB%8B%E7%BB%98_%E7%91%95%E5%85%89_1.png">
+						<div class="img-info">3.jpg</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-item">
+						<img src="http://prts.wiki/images/3/37/%E7%AB%8B%E7%BB%98_%E7%81%B0%E7%83%AC_1.png">
+						<div class="img-info">3.jpg</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="download-container">
+			<button class="button -blue center">下载图片</button>
+		</div>
+		<p class="download-tip">您的照片将于2021-07-23 20:11:00 失效, 请及时保存您的照片</p>
+	</div>
+</body>
+<script type="text/javascript" src="./js/swiper.min.js"></script>
+<script type="text/javascript">
+	const mySwiper = new Swiper('.swiper-container', {
+		loop: true,
+		effect: 'coverflow',
+		slideShadows: false,
+		slidesPerView: 1.6,
+		centeredSlides: true,
+		coverflowEffect: {
+			rotate: 0,
+			stretch: -50,
+			modifier: 1
+		}
+	})
+</script>
+</html>
